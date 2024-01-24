@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
 async function fetchRepos() {
   const response = await fetch(
@@ -10,10 +12,31 @@ async function fetchRepos() {
 
 const ReposPage = async () => {
   const repos = await fetchRepos();
-  console.log(repos);
+
   return (
-    <div>
-      <h1>{repos[0].name}</h1>
+    <div className='repos-container'>
+      <h2>Repositories</h2>
+      <ul className='repo-list'>
+        {repos.map(repo => (
+          <li key={repo.id}>
+            <Link href={`/code/repos/${repo.name}`}>
+              <h3>{repo.name}</h3>
+              <p>{repo.description}</p>
+              <div className='repo-details'>
+                <span>
+                  <FaStar>{repo.stargazers_count}</FaStar>
+                </span>
+                <span>
+                  <FaCodeBranch>{repo.forks_count}</FaCodeBranch>
+                </span>
+                <span>
+                  <FaEye>{repo.forks_count}</FaEye>
+                </span>
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
