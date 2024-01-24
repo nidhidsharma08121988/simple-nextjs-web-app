@@ -1,8 +1,10 @@
 :root {
-  --primary-back-color: white;
-  --secondary-back-color:#333 ;
+  --primary-back-color: #fff;
+  --secondary-back-color: #0058b7;
+  --alternate-back-color: #f4f4f4;
   --primary-text: black;
-  --secondary-text:white;
+  --secondary-text: #fff;
+  --alternate-text: #333;
 }
 
 html,
@@ -23,7 +25,7 @@ body {
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--primary-text);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
@@ -33,14 +35,14 @@ body {
 }
 
 .btn:hover {
-  background-color: #0058b7;
-  color: #fff;
+  background-color: var(--secondary-back-color);
+  color: var(--secondary-text);
 }
 
 .btn-back {
   display: inline-block;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--alternate-back-color);
+  color: var(--alternate-text);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
@@ -57,7 +59,7 @@ body {
   background-color: var(--secondary-back-color);
   color: var(--secondary-text);
   padding: 1rem;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid var(--primary-back-color);
 }
 
 .logo {
@@ -68,13 +70,13 @@ body {
 .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--secondary-text);
   text-decoration: none;
 }
 
 .links a {
   margin: 0 0.5rem 0 0.5rem;
-  color: #fff;
+  color: var(--secondary-text);
   text-decoration: none;
 }
 
@@ -99,7 +101,7 @@ body {
   padding: 0.7rem 1rem;
   margin-left: 0.5rem;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--secondary-text);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -107,7 +109,7 @@ body {
 }
 
 .search-button:hover {
-  background-color: #0058b7;
+  background-color: var(--secondary-back-color);
 }
 
 .search-input:focus,
@@ -135,8 +137,8 @@ body {
 
 .repo-list a {
   display: block;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--primary-back-color);
+  color: var(--alternate-text);
   padding: 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -185,7 +187,7 @@ body {
 
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: blue;
+  border-left-color: var(--secondary-back-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -198,8 +200,8 @@ body {
   padding: 1rem;
   margin: 1rem;
 
-  background-color: #fff;
-  color: #333;
+  background-color: var(--primary-back-color);
+  color: var(--alternate-text);
 }
 
 .card h2 {
