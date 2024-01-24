@@ -7,7 +7,9 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <div>
-      <h2>About Lorem</h2>
+      <div>
+        <h1>About</h1>
+      </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique
         eum praesentium, numquam facere vitae consequatur quas debitis dolorem,
