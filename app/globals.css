@@ -1,5 +1,8 @@
 :root {
-  --primary-color: #0070f3;
+  --primary-back-color: white;
+  --secondary-back-color:#333 ;
+  --primary-text: black;
+  --secondary-text:white;
 }
 
 html,
@@ -7,8 +10,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-back-color);
+  color: var(--primary-text);
 }
 
 .container {
@@ -51,8 +54,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0047ab;
-  color: #fff;
+  background-color: var(--secondary-back-color);
+  color: var(--secondary-text);
   padding: 1rem;
   border-bottom: 5px solid #fff;
 }
