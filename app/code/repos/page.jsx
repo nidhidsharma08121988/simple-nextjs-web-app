@@ -15,7 +15,7 @@ const ReposPage = async () => {
 
   return (
     <div className='repos-container'>
-      <h2>Repositories</h2>
+      <h2>Public Repositories</h2>
       <ul className='repo-list'>
         {repos.map(repo => (
           <li key={repo.id}>
