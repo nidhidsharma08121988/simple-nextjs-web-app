@@ -6,11 +6,10 @@ const Header = () => {
     <header className='header'>
       <nav className='container'>
         <div className='logo'>
-          <Link href='/'>WebTech</Link>
+          <Link href='/'>Nidhi NextJs Project</Link>
         </div>
         <div className='links'>
           <Link href='/about'>About</Link>
-          <Link href='/about/team'>Our Team</Link>
           <Link href='/code/repos'>Code</Link>
         </div>
       </nav>
