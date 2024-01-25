@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
+import Products from './components/Products.jsx';
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to Home Page </h1>
+      <h1>Lets learn Nextjs</h1>
+      <Products />
     </div>
   );
 };
