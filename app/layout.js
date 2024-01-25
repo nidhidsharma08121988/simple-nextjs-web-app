@@ -5,8 +5,8 @@ import Header from './components/Header';
 const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin'] });
 
 export const metadata = {
-  title: 'WebTech',
-  description: 'First next.js website',
+  title: 'Nidhi Nextjs',
+  description: 'My First next.js website',
   keywords: 'web dev, front end, JS, HTML, React, Next',
 };
 
