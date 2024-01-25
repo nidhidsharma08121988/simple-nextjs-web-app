@@ -1,12 +1,12 @@
 import React from 'react';
+import Repo from '@/app/components/Repo';
 
-const Repo = ({ params: { name } }) => {
+const RepoPage = ({ params: { name } }) => {
   return (
     <div className='card'>
-      <h2>{name}</h2>
-      <p>Repo Details</p>
+      <Repo name={name} />
     </div>
   );
 };
 
-export default Repo;
+export default RepoPage;
